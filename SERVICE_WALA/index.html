@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+     
+    <!-- <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> -->
+<!-- testo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">    
+<!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/bsb-btn-circle/bsb-btn-circle.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/bsb-sep/bsb-sep.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/font-size/font-size.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
+
+   <link rel="stylesheet" href="style.css">
+
+
+    <script src="java.js"></script>
+</head>
+<body  style="background-color: rgb(112, 104, 229)">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light "  style="background-color: rgb(236, 236, 236);  font-size: larger;  font-weight: 900;"  >
+        <div class="container">
+            <img class="navbar-brand"  width="60"  src="logo.png" >
+           
+           
+            <div class="container">
+                <form class="d-flex">
+                  <input class="form-control w-50 mx-2 " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto "  >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features" >Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact/index.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form/index.html">SignIn/Signout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="d-flex flex-row mx-4 p-2  align-items-center justify-content-center" >
+        <div class="dropdown ">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Sort By
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Relevance</a></li>
+              <li><a class="dropdown-item" href="#">Rating</a></li>
+              <li><a class="dropdown-item" href="#">Popular</a></li>
+              <li><a class="dropdown-item" href="#">Distance</a></li>
+              
+            </ul>
+          </div>
+
+
+        <div class="dropdown mx-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Amenities
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Relevance</a></li>
+              <li><a class="dropdown-item" href="#">Rating</a></li>
+              <li><a class="dropdown-item" href="#">Popular</a></li>
+              <li><a class="dropdown-item" href="#">Distance</a></li>
+    
+            </ul>
+          </div>
+
+
+
+        <div class="dropdown  me-sm-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Ratings
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Any</a></li>
+              <li><a class="dropdown-item" href="#">5.0</a></li>
+              <li><a class="dropdown-item" href="#">4.0+</a></li>
+              <li><a class="dropdown-item" href="#">3.5+</a></li>
+              <li><a class="dropdown-item" href="#">3.0+</a></li>
+              <li><a class="dropdown-item" href="#">2.0+</a></li>
+    
+            </ul>
+          </div>
+
+
+
+
+       <div  class="ms-5">
+        <button type="button" class="btn btn-light">price</button>
+        <button type="button" class="btn btn-light">local sevices</button>
+        <button type="button" class="btn btn-light">Success</button>
+        <button type="button" class="btn btn-light">Danger</button>
+        <button type="button" class="btn btn-light">Warning</button>
+        <button type="button" class="btn btn-light">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-light">Dark</button>
+       </div>
+          
+          
+
+
+    </div>
+
+
+
+
+<!-- big-cards -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide ms-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  
+  <div class="mx-auto carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="./images/image1.png" class="d-block w-60" alt="...">
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./images/image2.png" class="d-block w-60" alt="...">
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="./images/image3.png" class="d-block w-60" alt="...">
+    </div>
+
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./images/image4.png" class="d-block w-60" alt="...">
+    </div>
+
+    <div class="carousel-item" data-bs-interval="6000">
+      <img src="./images/image5.png" class="d-block w-60" alt="...">
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+<!-- popular-brand-moving-small-card -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- cards-small -->
+
+
+
+
+    <div class="card-group w-75 "   style="margin-left: 145px; "  >
+      <div class="card "  style="margin: 16px;">
+        <img src="./images/smallimages/ac.png " class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AC repair</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="">  <button type="button" class="btn btn-outline-primary"> Go For It </button></a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          
+        </div>
+      </div>
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/car.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CAR repair</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content. the jbd jsndvcjiwb ijsbdvjbwf brfiwbf </p>
+          <button type="button" class="btn btn-outline-primary">Go For It</button>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/bike.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BIKE repair</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+
+    <div class="card-group w-75"   style="margin-left: 145px;">
+      <div class="card"  style="margin: 16px;">
+        <img src="./images/smallimages/electricity.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Electricians</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/grocery.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grocery</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/par.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Parlours</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 3 -->
+
+    <div class="card-group w-75"   style="margin-left: 145px;">
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/barbar.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/ac.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card" style="margin: 16px;">
+        <img src="./images/smallimages/ac.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="">  <button type="button" class="btn btn-outline-primary">Go For It</button></a>
+           
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+
+<!--  -->
+
+
+
+
+
+
+
+<!-- moving small cards -->
+
+
+
+<div>
+  <h2       class="text-center mb-5"    style="margin: 10px; color: rgb(13, 13, 13); font-weight: 900;">Popular Searches :</h2>
+</div>
+
+
+
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        
+        
+<div class="row">
+    
+    <div class="col-lg-3">
+        <div class="card" style="width: 15rem;">
+  <img src="./images/popular/image1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card" style="width: 15rem;">
+  <img src="./images/popular/image2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    
+    
+    <div class="col-lg-4">
+        <div class="card" style="width: 15rem;">
+  <img src="./images/popular/image3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    
+</div>
+        
+        
+        
+    </div>
+    <div class="carousel-item">
+        
+        
+        
+<div class="row">
+    
+    <div class="col-lg-4">
+        <div class="card" style="width: 15rem;">
+  <img src="./images/popular/image1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card" style="width: 15rem;">
+  <img src="./images/popular/image1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    
+    
+    <div class="col-lg-4">
+        <div class="card" style="width: 15rem;">
+  <img src="./images/popular/image1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    
+</div>
+    
+        
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+<!-- testimonials -->
+
+
+<!-- <h2>Recent Activity Review</h2> -->
+
+
+
+<section id="reviews" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">What Our Customers Say</h2>
+      <div class="row">
+          <div class="col-md-4 mb-4">
+              <div class="card review-card border-0 shadow-sm">
+                  <div class="card-body">
+                      <div class="review-img text-center mb-3">
+                          <img src="https://static.vecteezy.com/system/resources/thumbnails/029/796/026/small_2x/asian-girl-anime-avatar-ai-art-photo.jpg"
+                               class="rounded-circle review-image" alt="John Doe">
+                      </div>
+                      <p class="card-text">"This software has completely transformed the way we manage our student
+                          data. The interface is user-friendly, and the support team is  ready to help!"</p>
+                      <div class="d-flex justify-content-between align-items-center mt-4">
+                          <div class="review-author">
+                              <h6 class="mb-0">John Doe</h6>
+                              <small>Principal, ABC School</small>
+                          </div>
+                          <div class="review-rating text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card review-card border-0 shadow-sm">
+                  <div class="card-body">
+                      <div class="review-img text-center mb-3">
+                          <img src="https://thumbs.dreamstime.com/b/d-icon-avatar-business-woman-illustration-smiling-happy-girl-cartoon-close-up-portrait-standing-teenager-isolated-277029066.jpg"
+                               class="rounded-circle review-image" alt="Jane Smith">
+                      </div>
+                      <p class="card-text">"We've seen a significant improvement in our communication with parents
+                          thanks to this CRM. Highly recommended for all educational institutions!"</p>
+                      <div class="d-flex justify-content-between align-items-center mt-4">
+                          <div class="review-author">
+                              <h6 class="mb-0">Jane Smith</h6>
+                              <small>Director, XYZ Academy</small>
+                          </div>
+                          <div class="review-rating text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card review-card border-0 shadow-sm">
+                  <div class="card-body">
+                      <div class="review-img text-center mb-3">
+                          <img src="https://img.freepik.com/free-photo/young-business-woman-3d-illustration-cartoon-character-isolated-white-background_1142-56515.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723334400&semt=ais_hybrid"
+                               class="rounded-circle review-image" alt="Emily Johnson">
+                      </div>
+                      <p class="card-text">"The analytics feature is a game-changer for us. We can now track student
+                          performance more efficiently and make data-driven decisions."</p>
+                      <div class="d-flex justify-content-between align-items-center mt-4">
+                          <div class="review-author">
+                              <h6 class="mb-0">Emily Johnson</h6>
+                              <small>Head of Department, LMN School</small>
+                          </div>
+                          <div class="review-rating text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- asked question -->
+
+<section id="faq" class="faq-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is your return policy?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We offer a 30-day return policy for most items. If you are not satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please ensure the item is in its original condition and packaging. Visit our "Returns & Refunds" page for more details.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I track my order?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        After placing an order, you will receive an email with a tracking number once your order has been shipped. You can use this number on our "Order Tracking" page to get real-time updates on your shipment status.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you offer international shipping?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we offer international shipping to many countries. Shipping costs and delivery times vary depending on your location. Please visit our "Shipping Information" page for more details on international orders.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How can I contact customer support?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can reach our customer support team via the "Contact Us" page on our website, or by emailing support@yourecommerce.com. We’re available Monday through Friday, from 9 AM to 6 PM (EST) to assist you with any questions or concerns.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer hai yeha -->
+
+
+<!-- Footer 16 - Bootstrap Brain Component -->
+<footer class="py-4 py-md-5  mt-4"  style="background-color: rgb(13, 16, 16);">
+
+  <!-- Logo & SM - Bootstrap Brain Component -->
+  <div>
+    <div class="container border-bottom border-dark pb-4">
+      <div class="row gy-3 align-items-sm-center">
+        <div class="col-12 col-sm-6">
+          <div class="footer-logo-wrapper text-start">
+            <a href="#!">
+              <img  width="70"  src="logo.png" alt="BootstrapBrain Logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="social-media-wrapper">
+            <ul class="m-0 list-unstyled d-flex justify-content-sm-end gap-2">
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook text-lightx" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
+                    <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Widgets Link - Bootstrap Brain Component -->
+  <section class="py-4 py-md-5 py-xl-7 py-xxl-10">
+    <div class="container">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Accessibility</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Accessibility Statement
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  ADA Compliance
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Assistive Technologies
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Accessibility Resources
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Accessibility Standards
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Design Guidelines
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Store</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Shop Now
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Product Categories
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Special Offers
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  New Releases
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Exclusive Deals
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Partnerships</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Partners
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Affiliates
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Collaborations
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Strategic Alliances
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Communities</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Contributions
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Community Engagement
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Donate
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Volunteer Opportunities
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Local Initiatives
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Community Partnerships
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright & Links - Bootstrap Brain Component -->
+  <div>
+    <div class="container border-top border-dark pt-4">
+      <div class="row gy-3 align-items-lg-center">
+        <div class="col-12 col-lg-6 order-1 order-lg-0">
+          <div class="copyright-wrapper d-block mb-1 fs-7 text-light text-start">
+            &copy; 2024. All Rights Reserved.
+          </div>
+          <div class="credit-wrapper d-block text-light fs-8 text-start">
+            Built by<a href="https://bootstrapbrain.com/" class="link-opacity-0 link-opacity-75-hover link-light text-decoration-none">
+              BootstrapBrain</a> with <span class="text-primary">&#9829;</span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="link-wrapper">
+            <ul class="m-0 list-unstyled d-flex justify-content-centerX justify-content-lg-end gap-2 gap-md-3">
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  Shipping
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  Refund
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  Warranty
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center">
+                  Security
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+    
+<!--  -->
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    
+</body>
+</html>
